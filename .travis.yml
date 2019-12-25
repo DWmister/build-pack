@@ -17,4 +17,9 @@ install:
 
 scripts:
   - npm test
-  - npm publish
+
+deploy:
+  provider: npm
+  email: "17602134327@163.com"
+  api_key: "1628f49e-3aa5-4f34-98f8-332016e09f5c"
+  skip_cleanup: true
