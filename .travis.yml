@@ -18,10 +18,19 @@ install:
 scripts:
   - npm test
 
+# deploy:
+#   provider: npm
+#   email: 17602134327@163.com
+#   # api_key: '$NPM_TOKEN'
+#   api_key:
+#     secure: f0748b67-0473-4b3b-92b9-89d51f571707
+#   skip_cleanup: true
+#   on:
+#     all_branches: true
+
 deploy:
   provider: npm
   email: 17602134327@163.com
-  api_key: "$NPM_TOKEN"
-  # api_key:
-  #   secure: 1628f49e-3aa5-4f34-98f8-332016e09f5c
-  skip_cleanup: true
+  api_key: 13fd3ece-8295-4540-8f49-6fd242a6eff3
+
+
