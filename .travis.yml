@@ -20,8 +20,8 @@ scripts:
 
 deploy:
   provider: npm
-  email: "17602134327@163.com"
+  email: 17602134327@163.com
   # api_key: "$NPM_TOKEN"
   api_key:
-    secure: "1628f49e-3aa5-4f34-98f8-332016e09f5c"
+    secure: 1628f49e-3aa5-4f34-98f8-332016e09f5c
   skip_cleanup: true
