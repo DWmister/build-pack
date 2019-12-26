@@ -26,10 +26,11 @@ jobs:
 
       deploy:
         provider: npm
+        edge: true
+        cleanup: true
         email: $NPM_AUTH
         api_token: $NPM_TOKEN
         access: public
-        cleanup: true
-        edge: true
+        registry: zhangsl/self-webpack4
         on:
           all_branches: true
