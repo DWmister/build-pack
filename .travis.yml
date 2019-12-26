@@ -21,10 +21,13 @@ install:
 jobs:
   include:
     - stage: deploy
+      script:
+        - npm version patch
+
       deploy:
         provider: npm
-        email: 17602134327@163.com
-        api_key: "$NPM_TOKEN"
+        email: $NPM_AUTH
+        api_token: $NPM_TOKEN
         access: public
         cleanup: true
         edge: true
