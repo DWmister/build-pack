@@ -18,19 +18,19 @@ install:
 #     on:
 #       all_branches: true
 
-jobs:
-  include:
-    - stage: deploy
-      # script:
-      #   - npm version patch
+# jobs:
+#   include:
+#     - stage: deploy
+#       # script:
+#       #   - npm version patch
 
-      deploy:
-        provider: npm
-        edge: true
-        cleanup: true
-        email: $NPM_AUTH
-        api_token: $NPM_TOKEN
-        access: public
-        registry: https://registry.npmjs.org/
-        on:
-          all_branches: true
+#       deploy:
+#         provider: npm
+#         edge: true
+#         cleanup: true
+#         email: $NPM_AUTH
+#         api_token: $NPM_TOKEN
+#         access: public
+#         registry: https://registry.npmjs.org/
+#         on:
+#           all_branches: true
