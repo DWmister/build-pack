@@ -8,12 +8,25 @@ install:
   - npm install -D
   - cd ../../..
 
-deploy:
-  - provider: npm
-    api_token: '$NPM_TOKEN'
-    email: 17602134327@163.com
-    access: true
-    cleanup: true
-    on:
-      all_branches: true
+# deploy:
+#   - provider: npm
+#     edge: true
+#     api_token: '$NPM_TOKEN'
+#     email: 17602134327@163.com
+#     access: public
+#     cleanup: true
+#     on:
+#       all_branches: true
 
+jobs:
+  include:
+    - stage: deploy
+      deploy:
+        provider: npm
+        email: 17602134327@163.com
+        api_key: "$NPM_TOKEN"
+        access: public
+        cleanup: true
+        edge: true
+        on:
+          all_branches: true
