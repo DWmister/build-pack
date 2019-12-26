@@ -15,8 +15,8 @@ install:
   - npm install -D
   - cd ../../..
 
-scripts:
-  - npm test
+# scripts:
+#   - npm test
 
 # deploy:
 #   provider: npm
@@ -28,8 +28,8 @@ scripts:
 #   on:
 #     all_branches: true
 
-# deploy:
-#   provider: npm
-#   email: 17602134327@163.com
-#   api_key: 13fd3ece-8295-4540-8f49-6fd242a6eff3
+deploy:
+  provider: npm
+  email: 17602134327@163.com
+  api_key: '$NPM_TOKEN'
 
