@@ -21,8 +21,8 @@ install:
 jobs:
   include:
     - stage: deploy
-      script:
-        - npm version patch
+      # script:
+      #   - npm version patch
 
       deploy:
         provider: npm
