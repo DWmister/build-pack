@@ -31,6 +31,6 @@ jobs:
         email: $NPM_AUTH
         api_token: $NPM_TOKEN
         access: public
-        registry: https://www.npmjs.com
+        registry: https://registry.npmjs.org/
         on:
           all_branches: true
