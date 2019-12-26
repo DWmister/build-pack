@@ -31,6 +31,6 @@ jobs:
         email: $NPM_AUTH
         api_token: $NPM_TOKEN
         access: public
-        registry: zhangsl/self-webpack4
+        registry: https://www.npmjs.com/package/self-webpack4
         on:
           all_branches: true
