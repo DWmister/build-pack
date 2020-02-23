@@ -1,36 +1,15 @@
 language: node_js
-
 node_js: stable
-
 install:
-  - npm install -D
-  - cd ./test/smoke/template
-  - npm install -D
-  - cd ../../..
-
-# deploy:
-#   - provider: npm
-#     edge: true
-#     api_token: $NPM_TOKEN
-#     email: $NPM_AUTH
-#     access: public
-#     cleanup: true
-#     on:
-#       all_branches: true
-
-# jobs:
-#   include:
-#     - stage: deploy
-#       # script:
-#       #   - npm version patch
-
-#       deploy:
-#         provider: npm
-#         edge: true
-#         cleanup: true
-#         email: $NPM_AUTH
-#         api_token: $NPM_TOKEN
-#         access: public
-#         registry: https://registry.npmjs.org/
-#         on:
-#           all_branches: true
+- npm install -D
+- cd ./test/smoke/template
+- npm install -D
+- cd ../../..
+deploy:
+  provider: npm
+  email: 17602134327@163.com
+  api_key:
+    secure: ERA4gQf/FdJFa+YTam/6x0xPt16gPVfo6V7CLmLG797MX35fwwUQPA1ihTLR+DcPziSKfy/LGnb89IFh0Sy/yRCvmEWnL0b6NgVHXJ2bZDRoTmkGYBp/YN1IiHcxk8Whgj/A1i7iDTEQXnxl+GzKK3mlcdjN824iR/6eXMGYo/nP1jdChUg+08NQG3cS/TwzU2WgRHGH0QXIR+0qBIbWvXBWJEYIdXGxQ0XNmv9weWSOmzG4riiLbh+lMk/+M7mg0+v13wU3YC+RLX8QnuwkikHYI5lR4f8Wqq45p1x3N6avK/bJKdTvPss9awwIsIjZY98e+IcBHqY6IRjaoVFe/E8IALL2iXwTf1sYsuGx95HH7OYWlPD0Ox9cVLtIWRbrcOGgCmIPMk7Dy9vi8dT59tzsiPk5B5U9Q4gxaF3j2Z4FD81wKRW5nDXznDcckIf0m0HpozzIUQUTaREqsLqfAyjzVGkMB8fygusDlyLW2ZofRR/kD0MFTTKHddHw9ZKTLePnuOsS39KW44aamdX0ZGHprtJKyR+s9xOKJuBwYZwnVeEzE775S3vPlr82NcroF1p1WkYQGWmVmhXJward+XSOMPfBjeWCXHjmQe7ftYF+y0RrNiqTKsehf+iuTLH3vZxuOkrCsObHcRX6SMbFEx81GBdPFFB/jZ/Agyf6sGQ=
+  on:
+    tags: true
+    repo: DWmister/build-pack
