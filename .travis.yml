@@ -8,15 +8,15 @@ install:
   - npm install -D
   - cd ../../..
 
-deploy:
-  - provider: npm
-    edge: true
-    api_token: $NPM_TOKEN
-    email: $NPM_AUTH
-    access: public
-    cleanup: true
-    on:
-      all_branches: true
+# deploy:
+#   - provider: npm
+#     edge: true
+#     api_token: $NPM_TOKEN
+#     email: $NPM_AUTH
+#     access: public
+#     cleanup: true
+#     on:
+#       all_branches: true
 
 # jobs:
 #   include:
